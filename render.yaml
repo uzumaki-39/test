@@ -1,0 +1,13 @@
+services:
+  - type: web
+    name: gokuhitter-bot
+    env: docker
+    envVars:
+      - key: BOT_TOKEN
+        sync: false
+      - key: LOG_GROUP_ID
+        sync: false
+      - key: DATABASE_URL
+        sync: false
+      - key: PYTHON_VERSION
+        value: 3.11.9
